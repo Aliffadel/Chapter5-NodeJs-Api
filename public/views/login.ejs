@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Signin Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    
+  <!-- Bootstrap core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/login-style.css" rel="stylesheet">
+
+</head>
+
+<body class="text-center" cz-shortcut-listen="true">
+
+  <main class="form-signin">
+    <form action="/login" method="post">
+        <img class="mb-4" src="assets/logo_1.png" alt="game-logo" width="72">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <% if (status === 'emailnotfound') { %>
+      <%- include('partial/email-not-found') %>
+      <% } else if (status === 'wrongpassword' ) { %>
+      <%- include('partial/wrong-password') %>
+
+      <% } %>
+      <button class="w-100 btn btn-lg btn-login" type="submit">Login</button>
+      
+    </form>
+  </main>
+
+
+
+
+
+</body>
+
+</html>

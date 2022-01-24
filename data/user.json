@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "email": "alif@email.com",
+        "password": "alif"
+    },
+    {
+        "id": 2,
+        "email": "aliffadel@email.com",
+        "password": "alif"
+    },
+    {
+        "id": "d3ce702a-4ab4-4681-8e80-ac2c77acc10c",
+        "email": "apaja@gmail.com",
+        "password": "bisajadi"
+    },
+    {
+        "id": "ac7e60b1-7eb9-4833-8fce-a1e53c151b32",
+        "email": "fadel@gmail.com",
+        "password": "asdasdasd"
+    }
+]
